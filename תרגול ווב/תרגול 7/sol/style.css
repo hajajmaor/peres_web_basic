@@ -1,0 +1,11 @@
+#main-div{
+    border-style: dashed;
+    border-width: 2px;
+    border-color: green;
+    padding: 4px;
+}
+#shop-list>li{
+    list-style-type: lower-greek;
+    font-size: 12px;
+    font-weight: 200;
+}

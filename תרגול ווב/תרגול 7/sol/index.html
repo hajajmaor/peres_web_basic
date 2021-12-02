@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS with Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main-div">
+      <h2>רשימת קניות</h2>
+      <ul id="shop-list"></ul>
+      <form action="#" onsubmit="addInput()">
+        <input type="text" name="" id="new-item" />
+        <input type="submit" value="הוסף לרשימה" />
+      </form>
+    </div>
+    <script>
+      var shoppingList = document.getElementById("shop-list");
+      shoppingList.innerHTML = "<li>Hello world</li>";
+      function addInput() {
+        var item = document.getElementById("new-item");
+        shoppingList.innerHTML += "<li>" + item.value + "</li>";
+        item.value = "";
+      }
+    </script>
+  </body>
+</html>
