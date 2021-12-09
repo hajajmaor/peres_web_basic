@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3 style="color: cyan">נקים היום אתר לביצוע החלפת כספים :)</h3>
+    <ol>
+      <li>מה לעזאזל הוא רוצה?</li>
+      <li>איך זה ייראה?</li>
+      <li>יאללה לממש שיעבוד</li>
+    </ol>
+    <div id="main-content">
+      <label for="amount">Amount to exchange</label>
+      <input id="amount" type="number" name="amount" />
+      <div>
+        <button onclick="convert(3.1)">buy USD $</button>
+        <button onclick="convert(3.5)">buy Euro</button>
+        <button onclick="convert(4.1)">buy Pound</button>
+      </div>
+      <div>
+        <input type="radio" name="curr" id="usd-radio" value="usd" />USD
+        <input type="radio" name="curr" id="" value="euro" />Euro
+        <input type="radio" name="curr" id="" value="pound" />Pound
+      </div>
+      <div class="result hidden">
+        <p>The new amount is:</p>
+        <input type="text" id="result" readonly />
+      </div>
+    </div>
+    <script src="exchange.js"></script>
+  </body>
+</html>
